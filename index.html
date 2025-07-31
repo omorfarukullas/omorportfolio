@@ -12,12 +12,16 @@
       box-sizing: border-box;
     }
 
+    html, body {
+      height: 100%;
+      overflow: hidden;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
       background: url('myphoto.jpg') no-repeat center center/cover;
       filter: grayscale(100%);
       color: white;
-      height: 100vh;
       position: relative;
     }
 
@@ -37,7 +41,7 @@
       text-align: center;
       padding: 40px 20px;
       max-width: 800px;
-      margin: 50px auto 0 auto; /* slightly closer to top */
+      margin: 50px auto 0 auto;
     }
 
     .container h1 {
