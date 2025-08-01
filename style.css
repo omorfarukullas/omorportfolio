@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #121212; /* Dark background */
-    color: #e0e0e0; /* Softer white text */
+    background-color: #121212;
+    color: #e0e0e0;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -17,7 +17,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 50px; /* Removed vertical padding from container */
+    padding: 0 50px;
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
@@ -29,13 +29,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0; /* Updated vertical padding for the header container */
+    padding: 25px 0;
 }
 
 .logo {
-    font-size: 1.9rem; /* Slightly smaller logo font */
-    font-weight: 600; /* Less bold */
-    color: #f0f0f0; /* Slightly softer white */
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #f0f0f0;
     letter-spacing: -0.03rem;
 }
 
@@ -45,10 +45,10 @@ nav ul {
 }
 
 nav ul li a {
-    color: #b0b0b0; /* Softer gray for links */
+    color: #b0b0b0;
     text-decoration: none;
-    margin-left: 28px; /* Adjusted spacing */
-    font-size: 1rem; /* Slightly smaller link font */
+    margin-left: 28px;
+    font-size: 1rem;
     font-weight: 400;
     transition: color 0.3s ease;
 }
@@ -64,12 +64,12 @@ nav ul li a:hover {
     color: #f0f0f0;
 }
 
-/* Main Content */
+/* Main Content (for the homepage) */
 main {
     display: grid;
-    grid-template-columns: 48% 52%; /* Adjusted column proportions */
+    grid-template-columns: 48% 52%;
     align-items: center;
-    padding: 70px 0; /* Adjusted vertical padding */
+    padding: 70px 0;
 }
 
 .profile-image {
@@ -88,23 +88,23 @@ main {
 }
 
 .portfolio-content {
-    padding-left: 70px; /* Adjusted left padding */
+    padding-left: 70px;
 }
 
 .portfolio-content h1 {
-    font-size: 3.3rem; /* Further adjusted heading font */
+    font-size: 3.3rem;
     font-weight: 700;
     line-height: 1.15;
-    margin-bottom: 8px; /* Slightly reduced bottom margin */
+    margin-bottom: 8px;
     color: #f0f0f0;
     letter-spacing: -0.06rem;
 }
 
 .portfolio-content .profession {
-    font-size: 1.5rem; /* Adjusted profession font size */
+    font-size: 1.5rem;
     font-weight: 400;
-    color: #d0d0d0; /* Softer color for profession */
-    margin-bottom: 35px; /* Adjusted bottom margin */
+    color: #d0d0d0;
+    margin-bottom: 35px;
     letter-spacing: -0.02rem;
 }
 
@@ -117,7 +117,7 @@ main {
 .explore-btn {
     background-color: #f0f0f0;
     color: #121212;
-    padding: 14px 38px; /* Adjusted button padding */
+    padding: 14px 38px;
     text-decoration: none;
     font-weight: 600;
     border-radius: 3px;
@@ -134,14 +134,52 @@ main {
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
 }
 
-/* Page Number */
+/* Page Number (for both pages) */
 .page-number {
     text-align: right;
-    font-size: 0.85rem; /* Slightly smaller page number */
+    font-size: 0.85rem;
     color: #777;
-    padding-top: 30px; /* Adjusted top padding */
-    padding-bottom: 20px; /* Adjusted bottom padding */
+    padding-top: 30px;
+    padding-bottom: 20px;
     border-top: 1px solid #333;
+}
+
+/* New styles for the scrollable sections on portfolio.html */
+.content-section {
+    padding: 100px 50px;
+    background-color: #1a1a1a;
+    color: #eee;
+}
+
+.section-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content-section h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.content-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ccc;
+    text-align: center;
+}
+
+.thank-you {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.thank-you h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 /* Responsive Design (adjust as needed) */
@@ -177,5 +215,17 @@ main {
     }
     header {
         padding: 20px 0;
+    }
+    .content-section {
+        padding: 60px 20px;
+    }
+    .content-section h2 {
+        font-size: 2rem;
+    }
+    .content-section p {
+        font-size: 1rem;
+    }
+    .thank-you h2 {
+        font-size: 1.5rem;
     }
 }
